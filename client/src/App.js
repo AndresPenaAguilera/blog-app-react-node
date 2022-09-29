@@ -1,14 +1,16 @@
+import React from "react";
+import PostCreate from "./PostCreate";
+import PostList from './PostList'
 
-
-import React from 'react'
-import PostCreate from './PostCreate';
-
-
-const component = () =>{
-    return <div>
-<h1>Create post</h1>
-    <PostCreate/>
-    </div>;
+const App = () => {
+  return (
+    <div className="container">
+      <h1>Create Post</h1>
+      <PostCreate />
+      <hr></hr>
+      <h1>Post</h1>
+      <PostList />
+    </div>
+  );
 };
-
-export default component
+export default App;
